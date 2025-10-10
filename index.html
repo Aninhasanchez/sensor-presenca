@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Presença - LoRa ESP</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="bg-gray-100 flex flex-col items-center p-6 min-h-screen">
+    <h1 class="text-3xl font-bold text-blue-600 mb-4">
+      Controle de Presença - LoRa ESP
+    </h1>
+
+    <div id="status" class="text-gray-700 font-semibold mb-6">
+      Aguardando dados do LoRa...
+    </div>
+
+    <div
+      class="w-full max-w-2xl bg-white shadow-lg rounded-xl overflow-hidden"
+    >
+      <table class="w-full text-left border-collapse">
+        <thead class="bg-blue-600 text-white">
+          <tr>
+            <th class="p-3">Aluno / Dispositivo</th>
+            <th class="p-3">Status</th>
+            <th class="p-3">Horário</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-presenca" class="divide-y divide-gray-200"></tbody>
+      </table>
+    </div>
+
+    <button
+      id="btn-simular"
+      class="mt-6 px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition"
+    >
+      Simular Presença
+    </button>
+  </body>
+</html>
