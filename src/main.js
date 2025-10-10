@@ -9,9 +9,9 @@ function registrarPresenca(nome) {
   const linha = document.createElement("tr");
   linha.className = "hover:bg-gray-50 transition";
   linha.innerHTML = `
-    <td class="p-3 font-medium text-gray-800">${nome}</td>
-    <td class="p-3 text-green-600 font-semibold">Presente</td>
-    <td class="p-3 text-gray-600">${horario}</td>
+    <td class="p-4 font-medium">${nome}</td>
+    <td class="p-4 text-green-600 font-semibold">Presente</td>
+    <td class="p-4 text-gray-600">${horario}</td>
   `;
   tabela.appendChild(linha);
 }
