@@ -17,7 +17,7 @@ function registrarPresenca(nome) {
 }
 
 function simularPresenca() {
-  const nomes = ["Ana", "Maria", "João"];
+  const nomes = ["Ana", "João", "Maria"];
   const nomeAleatorio = nomes[Math.floor(Math.random() * nomes.length)];
   registrarPresenca(nomeAleatorio);
 }
